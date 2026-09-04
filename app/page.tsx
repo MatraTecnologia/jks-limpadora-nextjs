@@ -71,10 +71,10 @@ export default function Home() {
               Equipe própria para limpeza pós-incêndio, pós-enchente, ambientes pós-morte e higienização especializada. São Paulo e todo o Brasil, todos os dias das 7h às 21h.
             </p>
             <div className="flex flex-wrap items-center gap-3 animate-in fade-in slide-in-from-bottom-4 delay-200 duration-700 fill-mode-both max-sm:w-full max-sm:*:w-full">
-              <Button render={<a href={waLink(mainWhatsapp.number)} target="_blank" rel="noopener" />} size="lg" className="h-14 px-7 text-base font-bold">
+              <Button nativeButton={false} render={<a href={waLink(mainWhatsapp.number)} target="_blank" rel="noopener" />} size="lg" className="h-14 px-7 text-base font-bold">
                 Falar com o Sr. João no WhatsApp
               </Button>
-              <Button render={<Link href="#servicos" />} variant="outline" size="lg" className="h-14 border-white/40 bg-transparent px-7 text-base font-bold text-white hover:bg-white/10 hover:text-white">
+              <Button nativeButton={false} render={<Link href="#servicos" />} variant="outline" size="lg" className="h-14 border-white/40 bg-transparent px-7 text-base font-bold text-white hover:bg-white/10 hover:text-white">
                 Ver serviços
               </Button>
             </div>

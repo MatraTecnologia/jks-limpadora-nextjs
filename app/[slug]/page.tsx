@@ -39,7 +39,7 @@ export default async function ServicePage({ params }: Props) {
   return (
     <>
       <PageHero title={service.title} lead={service.lead} label={tierLabel} image={aiImage(service.slug)} crumbs={[{ label: "Serviços", href: "/servicos" }, { label: service.title }]}>
-        <Button render={<a href={waLink(mainWhatsapp.number, message)} target="_blank" rel="noopener" />} size="lg" className="mt-2 h-14 px-7 text-base font-bold max-sm:w-full">
+        <Button nativeButton={false} render={<a href={waLink(mainWhatsapp.number, message)} target="_blank" rel="noopener" />} size="lg" className="mt-2 h-14 px-7 text-base font-bold max-sm:w-full">
           Pedir orçamento pelo WhatsApp
         </Button>
       </PageHero>

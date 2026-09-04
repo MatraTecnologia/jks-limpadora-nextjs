@@ -74,7 +74,7 @@ export default function EmpresaPage() {
               </dl>
             </Reveal>
             <Reveal delay={0.2} className="flex items-center justify-between gap-4">
-              <Button render={<a href={site.video} target="_blank" rel="noopener" />} variant="outline" size="lg" className="font-bold">
+              <Button nativeButton={false} render={<a href={site.video} target="_blank" rel="noopener" />} variant="outline" size="lg" className="font-bold">
                 Assistir ao vídeo institucional
               </Button>
               <Seal className="size-24 max-sm:hidden" />

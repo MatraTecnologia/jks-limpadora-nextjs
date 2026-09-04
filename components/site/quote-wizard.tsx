@@ -144,7 +144,7 @@ export const QuoteWizard = ({ services }: Props) => {
             <ArrowRight className="size-4" />
           </Button>
         ) : (
-          <Button render={<a href={waLink(mainWhatsapp.number, message)} target="_blank" rel="noopener" />} size="lg" disabled={!canNext} className="h-12 bg-wa px-6 font-bold text-white hover:bg-wa/90">
+          <Button nativeButton={false} render={<a href={waLink(mainWhatsapp.number, message)} target="_blank" rel="noopener" />} size="lg" disabled={!canNext} className="h-12 bg-wa px-6 font-bold text-white hover:bg-wa/90">
             Enviar pelo WhatsApp
           </Button>
         )}

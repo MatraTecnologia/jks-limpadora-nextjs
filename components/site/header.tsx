@@ -85,7 +85,7 @@ export const Header = () => {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button render={<a href={waLink(mainWhatsapp.number)} target="_blank" rel="noopener" />} size="lg" className="hidden h-11 px-5 text-[0.9375rem] font-bold sm:inline-flex">
+          <Button nativeButton={false} render={<a href={waLink(mainWhatsapp.number)} target="_blank" rel="noopener" />} size="lg" className="hidden h-11 px-5 text-[0.9375rem] font-bold sm:inline-flex">
             Falar com o Sr. João
           </Button>
 
@@ -118,7 +118,7 @@ export const Header = () => {
                     {l.label}
                   </Link>
                 ))}
-                <Button render={<a href={waLink(mainWhatsapp.number)} target="_blank" rel="noopener" />} size="lg" className="mt-6 h-12 font-bold">
+                <Button nativeButton={false} render={<a href={waLink(mainWhatsapp.number)} target="_blank" rel="noopener" />} size="lg" className="mt-6 h-12 font-bold">
                   Falar com o Sr. João no WhatsApp
                 </Button>
               </div>
