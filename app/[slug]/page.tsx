@@ -44,7 +44,7 @@ export default async function ServicePage({ params }: Props) {
         </Button>
       </PageHero>
 
-      <section className="py-16 sm:py-24">
+      <section className="py-12 sm:py-24">
         <div className="container-x grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_24rem] lg:gap-20">
           <Reveal className="prose-jks text-[1.0625rem] leading-relaxed">
             {service.body.map((p) => (
@@ -68,7 +68,7 @@ export default async function ServicePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="bg-paper py-16 sm:py-24">
+      <section className="bg-paper py-12 sm:py-24">
         <div className="container-x">
           <SectionHead label="Relacionados" title="Outros serviços." />
           <div className="grid gap-4 md:grid-cols-3">

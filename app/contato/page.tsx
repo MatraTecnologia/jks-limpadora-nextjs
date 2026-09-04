@@ -17,7 +17,7 @@ export default function ContatoPage() {
     <>
       <PageHero title="Contato e orçamento." label="Fale com a equipe" lead="Monte seu pedido em quatro passos e envie pelo WhatsApp, ou fale direto com a equipe. Atendemos todos os dias, das 7h às 21h." crumbs={[{ label: "Contato" }]} />
 
-      <section className="py-16 sm:py-24">
+      <section className="py-12 sm:py-24">
         <div className="container-x grid items-start gap-10 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] lg:gap-16">
           <Reveal>
             <QuoteWizard services={services.map(({ slug, title, shortTitle, tier }) => ({ slug, title, shortTitle, tier }))} />

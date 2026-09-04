@@ -21,7 +21,7 @@ export default function CertificadosPage() {
     <>
       <PageHero title="Atestados de capacidade técnica." label="Comprovação" lead="Documentos emitidos por instituições públicas e religiosas que atestam a qualidade e a capacidade técnica dos serviços executados pela JKS Limpadora." crumbs={[{ label: "Atestados" }]} />
 
-      <section className="py-16 sm:py-24">
+      <section className="py-12 sm:py-24">
         <div className="container-x">
           <ul className="grid gap-8 md:grid-cols-3">
             {certificates.map((c, i) => (

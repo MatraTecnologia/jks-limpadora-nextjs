@@ -19,7 +19,7 @@ export default function ServicosPage() {
     <>
       <PageHero title="Onze especialidades, duas frentes de trabalho." label="Serviços" lead="Situações críticas, que exigem urgência e método, e higienização especializada, programada para manter ambientes saudáveis." crumbs={[{ label: "Serviços" }]} />
 
-      <section className="py-16 sm:py-24">
+      <section className="py-12 sm:py-24">
         <div className="container-x">
           <Reveal className="mb-6 flex items-baseline justify-between gap-4 border-b border-ink pb-3">
             <h2 className="text-2xl font-extrabold tracking-tight">Situações críticas</h2>

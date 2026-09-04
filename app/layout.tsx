@@ -7,6 +7,7 @@ import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { WhatsAppFloat } from "@/components/site/whatsapp-float";
 import { MotionProvider } from "@/components/site/motion-provider";
+import { MobileBar } from "@/components/site/mobile-bar";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -52,13 +53,14 @@ const organization = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="pt-BR" className={cn("h-full", bricolage.variable, "font-sans")}>
-      <body className="flex min-h-full flex-col">
+      <body className="flex min-h-full flex-col pb-[4.25rem] md:pb-0">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }} />
         <MotionProvider>
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
           <WhatsAppFloat />
+          <MobileBar />
         </MotionProvider>
       </body>
     </html>

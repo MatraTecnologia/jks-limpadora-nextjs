@@ -11,7 +11,7 @@ export default function PrivacidadePage() {
   return (
     <>
       <PageHero title="Política de privacidade." label="Institucional" crumbs={[{ label: "Política de privacidade" }]} />
-      <section className="py-16 sm:py-24">
+      <section className="py-12 sm:py-24">
         <div className="container-x prose-jks text-[1.0625rem] leading-relaxed">
           <p>
             A JKS Limpadora respeita a sua privacidade e garante o sigilo das informações que você nos fornece. Os dados compartilhados por WhatsApp, telefone ou formulário são usados exclusivamente para o atendimento da sua solicitação, elaboração de orçamento e agendamento do serviço.

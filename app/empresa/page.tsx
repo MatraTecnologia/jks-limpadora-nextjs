@@ -29,7 +29,7 @@ export default function EmpresaPage() {
     <>
       <PageHero title="Limpeza especializada desde 1990." label="A empresa" image={aiImage("equipe")} imageAspect="square" lead="A JKS Limpadora nasceu em São Paulo e há mais de três décadas atende clientes residenciais, comerciais e industriais em situações que a limpeza convencional não resolve." crumbs={[{ label: "A empresa" }]} />
 
-      <section className="py-16 sm:py-24">
+      <section className="py-12 sm:py-24">
         <div className="container-x grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-20">
           <Reveal className="prose-jks text-[1.0625rem] leading-relaxed">
             <p>
