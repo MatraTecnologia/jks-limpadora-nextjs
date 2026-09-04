@@ -9,8 +9,6 @@ export const HeroMedia = ({ poster, desktop, mobile }: Props) => {
   const [src, setSrc] = useState<string | null>(null);
 
   useEffect(() => {
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced) return;
     const small = window.matchMedia("(max-width: 767px)").matches;
     setSrc((small ? mobile : desktop) ?? desktop ?? mobile);
   }, [desktop, mobile]);
