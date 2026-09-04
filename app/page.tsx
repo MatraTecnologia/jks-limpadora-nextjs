@@ -4,7 +4,8 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { site, waLink, mainWhatsapp } from "@/lib/site";
 import { services, criticalServices, specializedServices } from "@/lib/services";
-import { aiImage } from "@/lib/images";
+import { aiImage, aiVideo } from "@/lib/images";
+import { HeroMedia } from "@/components/site/hero-media";
 import { ServiceCard } from "@/components/site/service-card";
 import { QuoteWizard } from "@/components/site/quote-wizard";
 import { BeforeAfter } from "@/components/site/before-after";
@@ -54,7 +55,7 @@ export default function Home() {
     <>
       <section className="relative flex min-h-[78vh] items-end overflow-hidden bg-ink text-white sm:min-h-[86vh]">
         {hero ? (
-          <Image src={hero} alt="Técnico da JKS Limpadora em ambiente pós-incêndio" fill priority sizes="100vw" className="object-cover object-[64%_50%]" />
+          <HeroMedia poster={hero} desktop={aiVideo("video-hero-desktop")} mobile={aiVideo("video-hero-mobile")} />
         ) : (
           <div className="absolute inset-0">
             <Placeholder name="hero" className="rounded-none border-0" />
